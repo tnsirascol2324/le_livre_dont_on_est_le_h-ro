@@ -82,12 +82,14 @@ class Histoire:
 
 # Création des paragraphes
 paragraphe_intro = Paragraphe("Vous êtes dans un couloir avec deux portes devant vous. \n (a)aller à droite\n (b)aller à gauche\n")
-paragraphe_b = Paragraphe("Vous avez pris la porte de droite.\nDevant vous se trouve un gobelin,vous le défier il vous coupe un bras . \n")
-paragraphe_c = Paragraphe("Vous avez pris la porte de gauche.")
-paragraphe_d = Paragraphe("")
-paragraphe_e = Paragraphe("Devant vous se trouve un dieu. Il vous bénit et vous gagnez 2 points de dégâts.")
-pargraphe_f = Paragraphe("vous regarder au loin et remarqué une étrange forme se déplaçant en rampant tel un chien s'étant fait faucher .Vous le fixer si intensément qu'il sentit votre regard \n(g)continuer à le fixer \npartir en courant \nse cacher ")
-
+paragraphe_b = Paragraphe("Vous avez pris la porte de droite.\nDevant vous se trouve un gobelin,vous le défier il vous coupe un bras . \n(c)fuire \n(d)continuer le combat \n(e)le supplier")
+paragraphe_c = Paragraphe("Vous avez pris la porte de gauche.\nDevant vous se trouve un dieu , il ressemble  à  un crackead.\n Il vous demande a boire\n(f)lui donner \n(g)lui voler sa conso \n(h)fuir")
+paragraphe_d = Paragraphe("vous vous retournez pour vous enfuire mais le gobelin vous rattrape et vous tue")
+paragraphe_e = Paragraphe("Le goblin vous fonce dessus vous l'esquivez et le tuez ,\nvous sortez de la pièce et découvrez que vous êtes dans un donjon,\nvous regarder au loin et remarqué une étrange forme se déplaçant en rampant tel un chien s'étant fait faucher .Vous le fixer si intensément qu'il sentit votre regard \ncontinuer à le fixer \npartir en courant \nse cacher")
+paragraphe_f= Paragraphe("vous êtes pitoyable même le gobelin le semble avoir pitié mais ne vous épargne pas pour autant.\nil vous coupe la tête puis vous utilise comme siège ")
+paragraphe_g = Paragraphe("vous lui donnez un coca bien frais chacal\n pour vous récompenser il vous téléporte hors de danger\nvous ouvrez les yeux et remarquer que vous êtes en réalité à une soirée \n vous vous souvenez vous êtres bourré à mort car votre femme vous a trompé ")
+paragraphe_h = Paragraphe("vous lui volez sa conso , \nil se met à hurler et se transforme en un horrible monstre avec des crane de bébé accrocher à lui \n éffrayer vous courez mais il vous rattrape et vous arrache les tripes en vous gardant vivants vous mourrez dans d'attroce souffrance")
+paragraphe_i =Paragraphe("vous partez à toute vitesse sans demander votre reste .\nvous sortez de la pièce et découvrez que vous êtes dans un donjon,\nvous regarder au loin et remarqué une étrange forme se déplaçant en rampant tel un chien s'étant fait faucher .Vous le fixer si intensément qu'il sentit votre regard \ncontinuer à le fixer \npartir en courant \nse cacher")
 # Ajout des paragraphes à l'histoire
 histoire = Histoire()
 histoire.ajouter_paragraphe("intro", paragraphe_intro)
@@ -95,6 +97,11 @@ histoire.ajouter_paragraphe("a", paragraphe_b)
 histoire.ajouter_paragraphe("b", paragraphe_c)
 histoire.ajouter_paragraphe("c", paragraphe_d)
 histoire.ajouter_paragraphe("d", paragraphe_e)
+histoire.ajouter_paragraphe("e",paragraphe_f)
+histoire.ajouter_paragraphe("f",paragraphe_g)
+histoire.ajouter_paragraphe("g",paragraphe_h)
+histoire.ajouter_paragraphe("h",paragraphe_i)
+
 
 cle = histoire.get_paragraphes_keys()
 print(cle)
@@ -109,6 +116,8 @@ while True:
             break
     else:
         print("Choix invalide. Veuillez choisir parmi les possibilités.")
-        
+        #finir de mettre les choix
         #pas de retour en arriere si index de l'id actuelle ne peut pas appeler un id precedent
-        #stocké les endroit visite
+        #probleme ce sont des dictionnaire donc pas d'index
+        #stocké les endroit visite ou alors supprimé les items deja passé et si une situation rejoint un ancien item 
+        #c'est pas grave car l'histoir est faite main donc un copié collé est possible mais double le nombre de chose a écrire
