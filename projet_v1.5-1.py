@@ -120,4 +120,4 @@ while True:
         #pas de retour en arriere si index de l'id actuelle ne peut pas appeler un id precedent
         #probleme ce sont des dictionnaire donc pas d'index
         #stocké les endroit visite ou alors supprimé les items deja passé et si une situation rejoint un ancien item 
-        #c'est pas grave car l'histoir est faite main donc un copié collé est possible mais double le nombre de chose a écrire
+        #c'est pas grave car l'histoire est faite main donc un copié collé est possible mais double le nombre de chose a écrire
