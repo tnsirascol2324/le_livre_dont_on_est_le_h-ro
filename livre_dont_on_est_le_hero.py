@@ -96,13 +96,29 @@ paragraphe_intro = Paragraphe("Vous êtes dans un couloir avec deux portes devan
 paragraphe_a = Paragraphe("Vous avez pris la porte de droite.\nDevant vous se trouve un gobelin,vous le défiez il vous coupe un bras . \n(c)fuire \n(d)continuer le combat \n(e)le supplier")
 paragraphe_b = Paragraphe("Vous avez pris la porte de gauche.\nDevant vous se trouve un dieu, il ressemble à un crackead.\n Il vous demande à boire\n(f)lui donner \n(g)lui voler sa conso \n(h)fuir")
 paragraphe_c = Paragraphe("Vous vous retournez pour vous enfuir mais le gobelin vous rattrape et vous tue",1)
-paragraphe_d = Paragraphe("Le gobelin vous fonce dessus, vous l'esquivez et le tuez, vous sortez de la pièce et découvrez que vous êtes dans un donjon, vous regardez au loin et remarquez une étrange forme se déplaçant en rampant tel un chien s'étant fait faucher. Vous le fixez si intensément qu'il sentit votre regard \ncontinuer à le fixer \npartir en courant \nse cacher")
+paragraphe_d = Paragraphe("vous tuer le gobelin in extremis puis voyagé sur un chemin lugubre(i)")
 paragraphe_e = Paragraphe("Vous êtes pitoyable, même le gobelin semble avoir pitié mais ne vous épargne pas pour autant. Il vous coupe la tête puis vous utilise comme siège ",1)
 paragraphe_f = Paragraphe("Vous lui donnez un coca bien frais, pour vous récompenser, il vous téléporte hors de danger, vous ouvrez les yeux et remarquez que vous êtes en réalité à une soirée. Vous vous souvenez que vous êtes bourré à mort car votre femme vous a trompé.",0,1)
 paragraphe_g = Paragraphe("Vous lui volez sa conso, il se met à hurler et se transforme en un horrible monstre avec des crânes de bébé accrochés à lui. Effrayé, vous courez, mais il vous rattrape et vous arrache les tripes en vous gardant vivant. Vous mourez dans d'atroces souffrances.",1)
-paragraphe_h = Paragraphe("Vous partez à toute vitesse sans demander votre reste. Vous sortez de la pièce et découvrez que vous êtes dans un donjon, vous regardez au loin et remarquez une étrange forme se déplaçant en rampant tel un chien s'étant fait faucher. Vous le fixez si intensément qu'il sentit votre regard \ncontinuer à le fixer \npartir en courant \nse cacher")
+paragraphe_h = Paragraphe("vous partez sans demander votre reste et voyagé sur un chemin lugubre(i)")
+paragraphe_i = Paragraphe("Vous trouvez une épée magique cachée sous un rocher. Que faites-vous ?\n(j)La ramasser et partir à l'aventure\n(k)La laisser là où elle est")
+paragraphe_j = Paragraphe("Vous avez pris l'épée magique. Elle brille d'une lueur puissante, et vous vous sentez invincible. Vous continuez à avancer. Soudain, vous rencontrez un dragon.\n(l)Le combattre\n(m)Fuir")
+paragraphe_k = Paragraphe("Vous décidez de laisser l'épée magique sous le rocher et de continuer votre chemin. Vous arrivez dans une salle sombre. Il fait tellement noir que vous ne pouvez rien voir.\n(n)Allumer une torche\n(o)Continuer dans l'obscurité")
+paragraphe_l = Paragraphe("Vous décidez de combattre le dragon avec l'épée magique. Vous vous battez courageusement, mais le dragon est bien trop puissant. Il vous crache du feu, et vous brûlez vif. Vous êtes mort.", 1)
+paragraphe_m = Paragraphe("Vous choisissez de fuir le dragon. Vous courez à toute vitesse, mais il vous rattrape et vous dévore. Vous êtes mort.", 1)
+paragraphe_n = Paragraphe("Vous allumez une torche. À la lumière, vous voyez un passage secret dans un coin de la salle. Vous décidez d'explorer le passage.\n(p)Entrer dans le passage secret\n(q)Revenir dans le couloir principal")
+paragraphe_o = Paragraphe("Vous continuez à avancer dans l'obscurité. Vous trébuchez sur une pierre et tombez dans un piège mortel. Vous êtes mort.", 1)
+paragraphe_p = Paragraphe("Vous entrez dans le passage secret. Il vous mène à une chambre au trésor remplie d'or et de joyaux. Vous avez réussi à terminer cette aventure avec succès !", 0, 1)
+paragraphe_q = Paragraphe("Vous retournez dans le couloir principal. Vous êtes maintenant face à un choix crucial.\n(r)Prendre la porte de gauche\n(s)Prendre la porte de droite\n(t)Prendre une trappe caché sous le tapis")
+paragraphe_r = Paragraphe("Vous choisissez de prendre la porte de gauche. Elle vous conduit à un jardin enchanté où vous vivez le reste de vos jours en paix. Vous avez réussi !", 0, 1)
+paragraphe_s = Paragraphe("Vous choisissez de prendre la porte de droite. Elle vous conduit à un labyrinthe sans fin. Vous vous perdez et ne trouvez jamais la sortie. Vous êtes condamné à errer pour l'éternité.", 1)
+paragraphe_t = Paragraphe("En prenant la trappe, vous vous trouvez dans une salle mystérieuse. Au centre de la salle, il y a une grande table avec un coffre verrouillé posé dessus. \n(u)Ouvrir le coffre\n(v)Revenir au couloir principal")
+paragraphe_u = Paragraphe("Dans le coffre se trouvait une photo de votre ex avec écrit au dos 'force a toi mon reuf' de désespoir vous vous suicidé",1)
+paragraphe_v = Paragraphe("En revenant au couloir principal, vous voyez une porte de sortie et une table avec un pichet de wisky \n(w)Prendre la port de sortie\n(x)Prendre le verre de wisky")
+paragraphe_w = Paragraphe("vous passez la porte et vous retrouver dans un avion le 11 septempbre vous vous évanouissez",1)
+paragraphe_fin = Paragraphe("")
 
-# Ajout des paragraphes à l'histoire
+
 histoire = Histoire()
 histoire.ajouter_paragraphe("intro", paragraphe_intro)
 histoire.ajouter_paragraphe("a", paragraphe_a)
@@ -113,6 +129,23 @@ histoire.ajouter_paragraphe("e", paragraphe_e)
 histoire.ajouter_paragraphe("f", paragraphe_f)
 histoire.ajouter_paragraphe("g", paragraphe_g)
 histoire.ajouter_paragraphe("h", paragraphe_h)
+histoire.ajouter_paragraphe("i", paragraphe_i)
+histoire.ajouter_paragraphe("j", paragraphe_j)
+histoire.ajouter_paragraphe("k", paragraphe_k)
+histoire.ajouter_paragraphe("l", paragraphe_l)
+histoire.ajouter_paragraphe("m", paragraphe_m)
+histoire.ajouter_paragraphe("n", paragraphe_n)
+histoire.ajouter_paragraphe("o", paragraphe_o)
+histoire.ajouter_paragraphe("p", paragraphe_p)
+histoire.ajouter_paragraphe("q", paragraphe_q)
+histoire.ajouter_paragraphe("r", paragraphe_r)
+histoire.ajouter_paragraphe("s", paragraphe_s)
+histoire.ajouter_paragraphe("t", paragraphe_t)
+histoire.ajouter_paragraphe("u", paragraphe_u)
+histoire.ajouter_paragraphe("v", paragraphe_v)
+histoire.ajouter_paragraphe("w", paragraphe_w)
+histoire.ajouter_paragraphe("x", paragraphe_fin)
+
 
 cle = histoire.get_paragraphes_keys()
 print(cle)
@@ -124,8 +157,10 @@ while True:
     choix = input().lower()
     if choix in cle:
         id_actuelle = choix
-        if id_actuelle == "fin":
-            break
+        if id_actuelle=="x":
+            print("")
+            print("Vous buvez le verre et vous rendez compte qu'il se remplit comme par magie,\n vous décidé alors de vous installer dans cet endroit.\ncerte le danger est présent mais rien ne vaut du wisky gratuit\nVOILA UN HOMME UN VRAI")
+            sys.exit()
     else:
         print("Choix invalide. Veuillez choisir parmi les possibilités.")
-        #finir de mettre les choix
+
